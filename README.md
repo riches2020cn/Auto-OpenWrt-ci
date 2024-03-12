@@ -1,2 +1,2 @@
 # AutoBuild-lede
-自用云编译-原版OpenWrt
+云编译-原版OpenWrt
