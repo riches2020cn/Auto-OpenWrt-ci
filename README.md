@@ -1,2 +1,2 @@
 # AutoBuild-lede
-Auto-OpenWrt-ci
+自用云编译-原版OpenWrt
