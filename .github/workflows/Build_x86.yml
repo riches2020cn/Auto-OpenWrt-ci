@@ -100,7 +100,9 @@ jobs:
         echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> ./feeds.conf.default
         echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> ./feeds.conf.default
         echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main" >> ./feeds.conf.default
-        echo "src-git dockerman https://github.com/lisaac/luci-app-dockerman" >> ./feeds.conf.default        
+        
+    # 如果添加dockerman，还需要添加docker内核，繁琐，不建议使用docker
+        #echo "src-git dockerman https://github.com/lisaac/luci-app-dockerman" >> ./feeds.conf.default       
 
     # 添加 argon 皮肤，因为拉取到 feeds 文件夹，都必须在更新 feeds 命令之前拉取。Lean版 OpenWrt 需要拉取 argon-18.06 分支
     - name: Import external feeds - luci-theme-argon 
