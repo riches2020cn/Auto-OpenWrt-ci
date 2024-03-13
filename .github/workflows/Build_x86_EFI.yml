@@ -99,7 +99,9 @@ jobs:
         echo "src-git helloworld https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
         echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> ./feeds.conf.default
         echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> ./feeds.conf.default
-        echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main" >> ./feeds.conf.default
+
+    # 如果添加dockerman，还需要添加docker内核，繁琐，不建议使用docker
+        #echo "src-git dockerman https://github.com/lisaac/luci-app-dockerman" >> ./feeds.conf.default 
 
     # 如果添加dockerman，还需要添加docker内核，繁琐，不建议使用docker
         #echo "src-git dockerman https://github.com/lisaac/luci-app-dockerman" >> ./feeds.conf.default   
