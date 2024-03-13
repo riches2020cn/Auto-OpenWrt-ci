@@ -126,10 +126,10 @@ jobs:
         mv package/OpenClash/luci-app-openclash package
         rm -rf package/OpenClash
 
-    #- name: Import external feeds - poweroff
-      #working-directory: ./openwrt
-      #run: |
-        #git clone https://github.com/sky2016cn/luci-app-poweroff.git package/luci-app-poweroff
+    - name: Import external feeds - poweroff
+      working-directory: ./openwrt
+      run: |
+        git clone https://github.com/sky2016cn/luci-app-poweroff.git package/luci-app-poweroff
 
     # 添加 argon 皮肤，Lean版 OpenWrt 需要拉取 -b 18.06 分支
     - name: Import external feeds - luci-theme-argon 
